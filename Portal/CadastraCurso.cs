@@ -13,7 +13,7 @@ namespace Portal
 
         private void CadastraCurso_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,8 +26,7 @@ namespace Portal
         private void btn_salvarCadastro_Click(object sender, EventArgs e)
         {
             Curso curso = new Curso();
-            curso.NomeCurso = txt_curso.Text;
-            curso.Situacao = txt_situacao.Text;
+            curso.NomeCurso = txt_curso.Text;          
 
 
             List<Curso> listaCurso = new GravarCurso().Add(curso);

@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.btn_salvarCadastro = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_situacao = new System.Windows.Forms.TextBox();
             this.txt_curso = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_situacao = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_leitura = new System.Windows.Forms.ListView();
             this.btn_menu = new System.Windows.Forms.Button();
@@ -53,21 +51,11 @@
             this.btn_salvarCadastro.UseVisualStyleBackColor = true;
             this.btn_salvarCadastro.Click += new System.EventHandler(this.btn_salvarCadastro_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 215);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 25);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Materia";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 151);
+            this.label5.Location = new System.Drawing.Point(24, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 25);
             this.label5.TabIndex = 20;
@@ -82,16 +70,6 @@
             this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 17;
             this.label1.Text = "Curso";
-            // 
-            // txt_situacao
-            // 
-            this.txt_situacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_situacao.Location = new System.Drawing.Point(168, 148);
-            this.txt_situacao.Name = "txt_situacao";
-            this.txt_situacao.Size = new System.Drawing.Size(138, 30);
-            this.txt_situacao.TabIndex = 13;
-            this.txt_situacao.Text = "cursando";
-            this.txt_situacao.TextChanged += new System.EventHandler(this.txt_situacao_TextChanged);
             // 
             // txt_curso
             // 
@@ -124,16 +102,16 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // txt_situacao
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.txt_situacao.FormattingEnabled = true;
+            this.txt_situacao.Items.AddRange(new object[] {
             "Ativa",
             "Inativa"});
-            this.comboBox1.Location = new System.Drawing.Point(168, 212);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 27;
+            this.txt_situacao.Location = new System.Drawing.Point(168, 161);
+            this.txt_situacao.Name = "txt_situacao";
+            this.txt_situacao.Size = new System.Drawing.Size(121, 28);
+            this.txt_situacao.TabIndex = 27;
             // 
             // label3
             // 
@@ -173,14 +151,12 @@
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.txt_leitura);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txt_situacao);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_salvarCadastro);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_situacao);
             this.Controls.Add(this.txt_curso);
             this.Name = "CadastraCurso";
             this.Text = "CadastraCurso";
@@ -193,14 +169,12 @@
         #endregion
 
         private System.Windows.Forms.Button btn_salvarCadastro;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_situacao;
         private System.Windows.Forms.TextBox txt_curso;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txt_situacao;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView txt_leitura;
         private System.Windows.Forms.Button btn_menu;

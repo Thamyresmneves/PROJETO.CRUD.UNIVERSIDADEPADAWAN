@@ -25,7 +25,10 @@ namespace Portal
             result.Wait();
             var resultado = JsonConvert.DeserializeObject<List<Aluno>>(result.Result);
             return resultado;
-        } catch { }
+        } catch ( Exception erro)
+            {
+               
+            }
                 List<Aluno> listaAluno = new List<Aluno>();
                 return listaAluno;
         }

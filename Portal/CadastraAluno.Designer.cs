@@ -32,7 +32,6 @@
             this.txt_sobrenome = new System.Windows.Forms.TextBox();
             this.txt_cpf = new System.Windows.Forms.TextBox();
             this.txt_nascimento = new System.Windows.Forms.TextBox();
-            this.txt_cursoo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.txt_apresentaAluno = new System.Windows.Forms.ListView();
             this.btn_menu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.cb_curso = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txt_nome
@@ -82,15 +82,6 @@
             this.txt_nascimento.Size = new System.Drawing.Size(199, 30);
             this.txt_nascimento.TabIndex = 3;
             this.txt_nascimento.Text = "1997/06/07";
-            // 
-            // txt_cursoo
-            // 
-            this.txt_cursoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cursoo.Location = new System.Drawing.Point(183, 303);
-            this.txt_cursoo.Name = "txt_cursoo";
-            this.txt_cursoo.Size = new System.Drawing.Size(199, 30);
-            this.txt_cursoo.TabIndex = 4;
-            this.txt_cursoo.Text = "ativo";
             // 
             // label1
             // 
@@ -215,11 +206,20 @@
             this.label7.TabIndex = 41;
             this.label7.Text = "Cadastro de Aluno";
             // 
+            // cb_curso
+            // 
+            this.cb_curso.FormattingEnabled = true;
+            this.cb_curso.Location = new System.Drawing.Point(183, 305);
+            this.cb_curso.Name = "cb_curso";
+            this.cb_curso.Size = new System.Drawing.Size(199, 28);
+            this.cb_curso.TabIndex = 42;
+            // 
             // CadastraAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 450);
+            this.Controls.Add(this.cb_curso);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.txt_apresentaAluno);
@@ -232,13 +232,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_cursoo);
             this.Controls.Add(this.txt_nascimento);
             this.Controls.Add(this.txt_cpf);
             this.Controls.Add(this.txt_sobrenome);
             this.Controls.Add(this.txt_nome);
             this.Name = "CadastraAluno";
             this.Text = "CadastraAluno";
+            this.Load += new System.EventHandler(this.CadastraAluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,7 +250,6 @@
         private System.Windows.Forms.TextBox txt_sobrenome;
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.TextBox txt_nascimento;
-        private System.Windows.Forms.TextBox txt_cursoo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -263,5 +262,6 @@
         private System.Windows.Forms.ListView txt_apresentaAluno;
         private System.Windows.Forms.Button btn_menu;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cb_curso;
     }
 }

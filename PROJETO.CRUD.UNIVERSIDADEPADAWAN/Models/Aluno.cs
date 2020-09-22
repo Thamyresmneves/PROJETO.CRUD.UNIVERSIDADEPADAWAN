@@ -9,7 +9,7 @@ namespace UNIVERSIDADEPADAWAN.Models
         public string Sobrenome { get; set; }
         public DateTime Nascimento { get; set; }
         public string Cpf { get; set; }
-        public bool Curso { get; set; }
+        public string Curso { get; set; }
      
 
 

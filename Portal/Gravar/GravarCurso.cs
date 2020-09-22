@@ -63,7 +63,7 @@ namespace Portal
 
         }
 
-        public List<Curso> Busca(Curso curso)
+        public List<Curso> Busca2( Curso curso)
         {
             var url = "http://localhost:53462/cadastro/buscaCurso";
 
@@ -74,6 +74,25 @@ namespace Portal
             result.Wait();
             var resultado = JsonConvert.DeserializeObject<List<Curso>>(result.Result);
             return resultado;
+        }
+
+        public List<Curso> Busca ()
+        {
+            List<Curso> listaCurso = new List<Curso>();
+          
+            var url = "http://localhost:53462/cadastro/mostraCurso";
+
+            var httpClient = new HttpClient();
+            var resultRequest = httpClient.GetAsync(url);
+            resultRequest.Wait();
+            var result = resultRequest.Result.Content.ReadAsStringAsync();
+            result.Wait();
+          var resultado = JsonConvert.DeserializeObject<List<Curso>>(result.Result);
+            if (resultado != null )
+            {
+                listaCurso = resultado;
+            }
+            return listaCurso;
         }
     }
 }

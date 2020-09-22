@@ -60,5 +60,22 @@ namespace Portal
         {
 
         }
+
+        private void CadastraMateria_Load(object sender, EventArgs e)
+        {
+            GravarCurso curso = new GravarCurso();
+            List<Curso> listaCurso = new List<Curso>();
+            listaCurso = curso.Busca();
+
+            for (int i = 0; i < listaCurso.Count; i++)
+            {
+                cb_curso.Items.Add(listaCurso[i].NomeCurso);
+            }
+        }
+
+        private void list_view_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

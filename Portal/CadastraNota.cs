@@ -21,8 +21,13 @@ namespace Portal
         private void btn_salvar_Click(object sender, EventArgs e)
         {
             Aluno aluno = new Aluno();
+            Materia materia = new Materia();        
             Notas nota = new Notas();
+
+            nota.Aluno = cb_aluno.Text;
+            nota.Materia = cb_materia.Text;     
             nota.Nota = txt_notaN.Text;
+        
 
             List<Notas> listaNotas = new GravarNota().Add(nota);
 
@@ -38,7 +43,8 @@ namespace Portal
         private void TelaProfessor_Load(object sender, EventArgs e)
         {
             GravarAluno chamadaAluno = new GravarAluno();
-            List<Aluno> listaAluno= chamadaAluno.Busca();
+            List<Aluno> listaAluno = new List<Aluno>();
+              listaAluno = chamadaAluno.Busca();
 
             for (int i = 0; i < listaAluno.Count; i++)
             {

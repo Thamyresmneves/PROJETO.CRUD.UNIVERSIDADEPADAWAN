@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using UNIVERSIDADEPADAWAN.Models;
 
 namespace UNIVERSIDADEPADAWAN.Controllers
 {
@@ -20,7 +21,7 @@ namespace UNIVERSIDADEPADAWAN.Controllers
         [HttpPost]
         [Route("adicionaNotas")]
 
-        public ActionResult Post(Models.Notas Notas)
+        public ActionResult AdicionaNotas(Notas Notas)
         {
             listaNotas.Add(Notas);
             return Ok(listaNotas);

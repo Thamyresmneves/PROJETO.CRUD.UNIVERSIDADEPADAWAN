@@ -18,9 +18,21 @@ namespace Portal
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {        
-          
-            DialogResult dialogResult = MessageBox.Show("Essas são as notas disponiveis:");
+        {
+
+            Aluno aluno = new Aluno();
+            Notas notas = new Notas();
+            notas.Aluno = cb_aluno.Text;
+
+            List<Notas> listaNotas = new GravarNota().Busca(notas);
+
+            ListViewItem[] itens = new ListViewItem[listaNotas.Count];
+            for (int i = 0; i < listaNotas.Count; i++)
+            {
+                itens[i] = new ListViewItem(listaNotas[i].Nota, i);
+            }
+            list_view.Items.Clear();
+            list_view.Items.AddRange(itens);
 
         }
 

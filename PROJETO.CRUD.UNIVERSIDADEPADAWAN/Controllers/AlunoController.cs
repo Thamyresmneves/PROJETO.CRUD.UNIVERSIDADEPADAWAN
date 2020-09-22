@@ -41,12 +41,8 @@ namespace UNIVERSIDADEPADAWAN.Controllers
         [HttpGet]
         [Route("mostraTodosAlunos")]
 
-        public ActionResult Mostra(string nome)
-        {
-            var result = listaAlunos;
-            if (result.Count == 0)
-                return BadRequest("não tem");
-            else
+        public ActionResult Mostra()
+        {             
                 return Ok (listaAlunos);
 
         }

@@ -12,8 +12,7 @@ namespace Portal
     {
         public List<Notas> Add(Notas nota)
         {
-            try
-            {
+          
                 var url = "http://localhost:53462/cadastro/adicionaNotas";
 
                 var httpClient = new HttpClient();
@@ -21,18 +20,15 @@ namespace Portal
                 var content = new StringContent(serializedObject, Encoding.UTF8, "application/json");
                 var resultRequest = httpClient.PostAsync(url, content);
                 resultRequest.Wait();
-                if (resultRequest.Result.IsSuccessStatusCode)
-                {
+               
                     var result = resultRequest.Result.Content.ReadAsStringAsync();
                     result.Wait();
                     var resultado = JsonConvert.DeserializeObject<List<Notas>>(result.Result);
                     return resultado;
-                }
-            }
-            catch { }
+           
 
-            List<Notas> listaNotas = new List<Notas>();
-            return listaNotas;
+           // List<Notas> listaNotas = new List<Notas>();
+           // return listaNotas;
         }
 
         public List<Notas> Deleta(string aluno)

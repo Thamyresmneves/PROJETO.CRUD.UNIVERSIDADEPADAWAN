@@ -7,8 +7,9 @@ namespace UNIVERSIDADEPADAWAN.Models
     {
         public int Id { get; set; }
         public string NomeCurso { get; set; }
+        public bool Situacao { get; set; }
         public List<Materia> Materia { get; set; }
-        public string Situacao { get; set; }
+      
 
     }
 }

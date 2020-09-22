@@ -27,9 +27,19 @@ namespace UNIVERSIDADEPADAWAN.Controllers
         }
 
         [HttpPost]
+        [Route("mostraCurso")]
+
+        public ActionResult mostra()
+        {
+
+            return Ok(listaCurso);
+
+        }
+
+        [HttpPost]
         [Route("buscaCurso")]
 
-        public ActionResult GetAluno(string Curso)
+        public ActionResult GetCurso(string Curso)
         {
             var result = listaCurso.Where(x => x.NomeCurso.Contains(Curso)).ToList();
             if (result is null)

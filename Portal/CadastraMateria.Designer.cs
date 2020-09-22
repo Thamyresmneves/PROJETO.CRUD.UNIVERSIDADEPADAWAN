@@ -37,7 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_curso = new System.Windows.Forms.ComboBox();
             this.list_view = new System.Windows.Forms.ListView();
             this.btn_menu = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,9 +70,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(46, 208);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 25);
+            this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Situacao";
+            this.label5.Text = "Curso";
             // 
             // label1
             // 
@@ -131,16 +131,13 @@
             this.label3.TabIndex = 36;
             this.label3.Text = "Lista:";
             // 
-            // comboBox1
+            // cb_curso
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Ativa",
-            "Inativa"});
-            this.comboBox1.Location = new System.Drawing.Point(250, 205);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 28);
-            this.comboBox1.TabIndex = 37;
+            this.cb_curso.FormattingEnabled = true;
+            this.cb_curso.Location = new System.Drawing.Point(250, 205);
+            this.cb_curso.Name = "cb_curso";
+            this.cb_curso.Size = new System.Drawing.Size(138, 28);
+            this.cb_curso.TabIndex = 37;
             // 
             // list_view
             // 
@@ -150,6 +147,7 @@
             this.list_view.Size = new System.Drawing.Size(212, 217);
             this.list_view.TabIndex = 38;
             this.list_view.UseCompatibleStateImageBehavior = false;
+            this.list_view.SelectedIndexChanged += new System.EventHandler(this.list_view_SelectedIndexChanged);
             // 
             // btn_menu
             // 
@@ -181,7 +179,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.list_view);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_curso);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -193,6 +191,7 @@
             this.Controls.Add(this.txt_descricao);
             this.Name = "CadastraMateria";
             this.Text = "CadastroMateria";
+            this.Load += new System.EventHandler(this.CadastraMateria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,7 +207,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_curso;
         private System.Windows.Forms.ListView list_view;
         private System.Windows.Forms.Button btn_menu;
         private System.Windows.Forms.Label label4;
