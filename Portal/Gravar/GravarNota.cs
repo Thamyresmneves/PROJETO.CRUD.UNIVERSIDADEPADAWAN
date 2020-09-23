@@ -63,7 +63,7 @@ namespace Portal
         {
             try
             {
-                var url = "http://localhost:53462/cadastro/mostraNotas";
+                var url = "http://localhost:53462/cadastro/buscaNotas";
 
                 var httpClient = new HttpClient();
                 var resultRequest = httpClient.GetAsync(url);

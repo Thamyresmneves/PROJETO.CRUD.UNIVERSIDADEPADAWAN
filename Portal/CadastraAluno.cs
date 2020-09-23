@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Portal
@@ -22,13 +23,14 @@ namespace Portal
 
         private void btn_salvarCadastro_Click(object sender, EventArgs e)
         {
+            
             Aluno aluno = new Aluno();
-            aluno.Nome = txt_nome.Text;
+            aluno.Nome = txt_nome.Text;            
             aluno.Sobrenome = txt_sobrenome.Text;
             aluno.Nascimento = Convert.ToDateTime(txt_nascimento.Text);
             aluno.Cpf = txt_cpf.Text;
 
-            List<Aluno> listaAluno = new GravarAluno().Add(aluno);
+            List <Aluno> listaAluno = new GravarAluno().Add(aluno);
 
             ListViewItem[] itens = new ListViewItem[listaAluno.Count];
             for (int i = 0; i < listaAluno.Count; i++)

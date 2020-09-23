@@ -47,7 +47,7 @@
             this.btn_salvarCadastro.ForeColor = System.Drawing.Color.Snow;
             this.btn_salvarCadastro.Location = new System.Drawing.Point(17, 255);
             this.btn_salvarCadastro.Name = "btn_salvarCadastro";
-            this.btn_salvarCadastro.Size = new System.Drawing.Size(72, 50);
+            this.btn_salvarCadastro.Size = new System.Drawing.Size(84, 50);
             this.btn_salvarCadastro.TabIndex = 22;
             this.btn_salvarCadastro.Text = "salvar";
             this.btn_salvarCadastro.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(127, 255);
+            this.button2.Location = new System.Drawing.Point(120, 255);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 50);
+            this.button2.Size = new System.Drawing.Size(87, 50);
             this.button2.TabIndex = 26;
             this.button2.Text = "excluir";
             this.button2.UseVisualStyleBackColor = false;

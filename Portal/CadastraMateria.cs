@@ -20,15 +20,15 @@ namespace Portal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // salvs
+            
             Materia materia = new Materia();
             materia.Descricao = txt_descricao.Text;
             materia.DataCadastro = Convert.ToDateTime(txt_dataCadastro.Text);
 
 
             List<Materia> listaMateria = new GravarMateria().Add(materia);
-
-            ListViewItem[] itens = new ListViewItem[listaMateria.Count];
+           
+           ListViewItem[] itens = new ListViewItem[listaMateria.Count];
             for (int i = 0; i < listaMateria.Count; i++)
             {
                 itens[i] = new ListViewItem(listaMateria[i].Descricao,i);

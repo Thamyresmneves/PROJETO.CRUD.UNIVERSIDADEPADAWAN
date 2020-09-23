@@ -25,15 +25,24 @@ namespace Portal
             nota.Aluno = cb_aluno.Text;
             nota.Materia = cb_materia.Text;
 
+            List<Materia> listaMateria = new GravarMateria().Busca();
+            ListViewItem[] itenss = new ListViewItem[listaMateria.Count];
+            for (int i = 0; i < listaMateria.Count; i++)
+            {
+                itenss[i] = new ListViewItem(listaMateria[i].Descricao, i);
+            }
+
 
             List<Nota> listaNotas = new GravarNota().Add(nota);
-
+            MessageBox.Show("Nota cadastrada com sucesso!");
             ListViewItem[] itens = new ListViewItem[listaNotas.Count];
             for (int i = 0; i < listaNotas.Count; i++)
             {
                 itens[i] = new ListViewItem(listaNotas[i].Valor, i);
             }
+
             list_view.Items.Clear();
+            list_view.Items.AddRange(itenss);
             list_view.Items.AddRange(itens);
 
         }

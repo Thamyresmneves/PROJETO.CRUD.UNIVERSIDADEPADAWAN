@@ -29,15 +29,15 @@ namespace Portal
             curso.NomeCurso = txt_curso.Text;          
 
 
-            List<Curso> listaCurso = new GravarCurso().Add(curso);
+            List<Curso> listaCurso = new GravarCurso().Add(curso);           
 
             ListViewItem[] itens = new ListViewItem[listaCurso.Count];
-            for (int i = 0; i < listaCurso.Count; i++)
-            {
-                itens[i] = new ListViewItem(listaCurso[i].NomeCurso, i);
-            }
-            txt_leitura.Items.Clear();
-            txt_leitura.Items.AddRange(itens);
+              for (int i = 0; i < listaCurso.Count; i++)
+              {
+                  itens[i] = new ListViewItem(listaCurso[i].NomeCurso, i);
+              }
+              txt_leitura.Items.Clear();
+              txt_leitura.Items.AddRange(itens);
         }
 
         private void txt_leitura_SelectedIndexChanged(object sender, EventArgs e)

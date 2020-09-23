@@ -37,9 +37,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.cb_curso = new System.Windows.Forms.ComboBox();
-            this.list_view = new System.Windows.Forms.ListView();
             this.btn_menu = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.list_view = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btn_excluiCadastro
@@ -47,7 +47,7 @@
             this.btn_excluiCadastro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_excluiCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_excluiCadastro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_excluiCadastro.Location = new System.Drawing.Point(108, 322);
+            this.btn_excluiCadastro.Location = new System.Drawing.Point(119, 320);
             this.btn_excluiCadastro.Name = "btn_excluiCadastro";
             this.btn_excluiCadastro.Size = new System.Drawing.Size(91, 51);
             this.btn_excluiCadastro.TabIndex = 30;
@@ -129,7 +129,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(271, 322);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 49);
+            this.button2.Size = new System.Drawing.Size(108, 49);
             this.button2.TabIndex = 34;
             this.button2.Text = "voltar";
             this.button2.UseVisualStyleBackColor = false;
@@ -143,16 +143,6 @@
             this.cb_curso.Size = new System.Drawing.Size(156, 28);
             this.cb_curso.TabIndex = 37;
             // 
-            // list_view
-            // 
-            this.list_view.HideSelection = false;
-            this.list_view.Location = new System.Drawing.Point(271, 78);
-            this.list_view.Name = "list_view";
-            this.list_view.Size = new System.Drawing.Size(244, 217);
-            this.list_view.TabIndex = 38;
-            this.list_view.UseCompatibleStateImageBehavior = false;
-            this.list_view.SelectedIndexChanged += new System.EventHandler(this.list_view_SelectedIndexChanged);
-            // 
             // btn_menu
             // 
             this.btn_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -160,7 +150,7 @@
             this.btn_menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_menu.Location = new System.Drawing.Point(401, 320);
             this.btn_menu.Name = "btn_menu";
-            this.btn_menu.Size = new System.Drawing.Size(114, 51);
+            this.btn_menu.Size = new System.Drawing.Size(100, 51);
             this.btn_menu.TabIndex = 39;
             this.btn_menu.Text = "menu";
             this.btn_menu.UseVisualStyleBackColor = false;
@@ -178,6 +168,16 @@
             this.label4.TabIndex = 40;
             this.label4.Text = "Cadastro de materia";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // list_view
+            // 
+            this.list_view.HideSelection = false;
+            this.list_view.Location = new System.Drawing.Point(271, 78);
+            this.list_view.Name = "list_view";
+            this.list_view.Size = new System.Drawing.Size(230, 217);
+            this.list_view.TabIndex = 38;
+            this.list_view.UseCompatibleStateImageBehavior = false;
+            this.list_view.SelectedIndexChanged += new System.EventHandler(this.list_view_SelectedIndexChanged);
             // 
             // CadastraMateria
             // 
@@ -215,8 +215,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cb_curso;
-        private System.Windows.Forms.ListView list_view;
         private System.Windows.Forms.Button btn_menu;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListView list_view;
     }
 }
