@@ -11,7 +11,7 @@ namespace UNIVERSIDADEPADAWAN.Repository
         public static List<Aluno> Aluno { get; set; }
         public static List<Curso> Curso { get; set; }
         public static List<Materia> Materia { get; set; }
-        public static List<Notas> Notas { get; set; }
+        public static List<Nota> Notas { get; set; }
 
 
 
@@ -41,11 +41,11 @@ namespace UNIVERSIDADEPADAWAN.Repository
 
         }
 
-        public static void MostraNota(List<Notas> nota)
+        public static void MostraNota(List<Nota> nota)
         {
             foreach (var p in nota)
             {
-                Console.WriteLine(p.Nota);
+                Console.WriteLine(p.Valor);
             }
         }
     }

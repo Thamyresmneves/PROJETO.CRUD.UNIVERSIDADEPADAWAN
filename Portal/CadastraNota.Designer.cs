@@ -46,7 +46,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(217, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 36);
@@ -56,8 +58,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 155);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(32, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 5;
@@ -66,8 +70,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 212);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(24, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 7;
@@ -76,8 +82,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 267);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(70, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 25);
             this.label4.TabIndex = 9;
@@ -86,42 +94,48 @@
             // txt_notaN
             // 
             this.txt_notaN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_notaN.Location = new System.Drawing.Point(114, 261);
+            this.txt_notaN.Location = new System.Drawing.Point(137, 278);
             this.txt_notaN.Name = "txt_notaN";
             this.txt_notaN.Size = new System.Drawing.Size(81, 35);
             this.txt_notaN.TabIndex = 8;
             // 
             // btn_salvar
             // 
+            this.btn_salvar.BackColor = System.Drawing.Color.Black;
             this.btn_salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salvar.Location = new System.Drawing.Point(12, 358);
+            this.btn_salvar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_salvar.Location = new System.Drawing.Point(17, 364);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(97, 42);
             this.btn_salvar.TabIndex = 10;
             this.btn_salvar.Text = "salvar";
-            this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.UseVisualStyleBackColor = false;
             this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
             // btn_apagar
             // 
+            this.btn_apagar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_apagar.Location = new System.Drawing.Point(139, 352);
+            this.btn_apagar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_apagar.Location = new System.Drawing.Point(189, 358);
             this.btn_apagar.Name = "btn_apagar";
             this.btn_apagar.Size = new System.Drawing.Size(106, 48);
             this.btn_apagar.TabIndex = 11;
             this.btn_apagar.Text = "apagar";
-            this.btn_apagar.UseVisualStyleBackColor = true;
+            this.btn_apagar.UseVisualStyleBackColor = false;
             this.btn_apagar.Click += new System.EventHandler(this.btn_apagar_Click);
             // 
             // btn_voltar
             // 
+            this.btn_voltar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_voltar.Location = new System.Drawing.Point(427, 355);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(115, 42);
             this.btn_voltar.TabIndex = 12;
             this.btn_voltar.Text = "voltar";
-            this.btn_voltar.UseVisualStyleBackColor = true;
+            this.btn_voltar.UseVisualStyleBackColor = false;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // list_view
@@ -136,7 +150,7 @@
             // cb_aluno
             // 
             this.cb_aluno.FormattingEnabled = true;
-            this.cb_aluno.Location = new System.Drawing.Point(114, 156);
+            this.cb_aluno.Location = new System.Drawing.Point(29, 163);
             this.cb_aluno.Name = "cb_aluno";
             this.cb_aluno.Size = new System.Drawing.Size(280, 28);
             this.cb_aluno.TabIndex = 18;
@@ -145,27 +159,31 @@
             // cb_materia
             // 
             this.cb_materia.FormattingEnabled = true;
-            this.cb_materia.Location = new System.Drawing.Point(114, 209);
+            this.cb_materia.Location = new System.Drawing.Point(29, 227);
             this.cb_materia.Name = "cb_materia";
             this.cb_materia.Size = new System.Drawing.Size(280, 28);
             this.cb_materia.TabIndex = 19;
             // 
             // btn_menu
             // 
+            this.btn_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_menu.Location = new System.Drawing.Point(548, 352);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(114, 45);
             this.btn_menu.TabIndex = 40;
             this.btn_menu.Text = "menu";
-            this.btn_menu.UseVisualStyleBackColor = true;
+            this.btn_menu.UseVisualStyleBackColor = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(78, 84);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(70, 72);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(208, 29);
             this.label5.TabIndex = 41;
@@ -175,7 +193,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 450);
+            this.BackgroundImage = global::Portal.Properties.Resources.fundo_011;
+            this.ClientSize = new System.Drawing.Size(713, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.cb_materia);

@@ -11,7 +11,7 @@ namespace UNIVERSIDADEPADAWAN.Repository
         public static List<Aluno> Aluno { get; set; }
         public static List<Curso> Curso { get; set; }
         public static List<Materia> Materia { get; set; }
-        public static List<Notas> Notas { get; set; }
+        public static List<Nota> Notas { get; set; }
 
         public void RemoveAluno(Aluno aluno)
         {           
@@ -28,7 +28,7 @@ namespace UNIVERSIDADEPADAWAN.Repository
             Materia.Remove(materia);          
         }
 
-        public void RemoveNota(Notas nota)
+        public void RemoveNota(Nota nota)
         {           
             Notas.Remove(nota);         
         }

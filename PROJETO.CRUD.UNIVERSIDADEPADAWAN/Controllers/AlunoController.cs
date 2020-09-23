@@ -20,9 +20,9 @@ namespace UNIVERSIDADEPADAWAN.Controllers
         [HttpPost]
         [Route("adicionaAluno")]
 
-        public ActionResult Post(Models.Aluno Aluno)
+        public ActionResult Post(Models.Aluno aluno)
         {
-            listaAlunos.Add(Aluno);
+            listaAlunos.Add(aluno);
             return Ok(listaAlunos);
         }
 

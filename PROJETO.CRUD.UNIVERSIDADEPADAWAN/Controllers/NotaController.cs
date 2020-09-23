@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using UNIVERSIDADEPADAWAN.Models;
+
 
 namespace UNIVERSIDADEPADAWAN.Controllers
 {
@@ -9,7 +9,7 @@ namespace UNIVERSIDADEPADAWAN.Controllers
     [Route("cadastro")]
     public class NotaController : ControllerBase
     {
-        public static List<Models.Notas> listaNotas = new List<Models.Notas>();
+        public static List<Models.Nota> listaNotas = new List<Models.Nota>();
 
         [HttpGet]
         [Route("mostraNotas")]
@@ -19,17 +19,16 @@ namespace UNIVERSIDADEPADAWAN.Controllers
         }
 
         [HttpPost]
-        [Route("adicionaNotas")]
-
-        public ActionResult AdicionaNotas(Notas Notas)
+        [Route("adicionaNota")]
+        public ActionResult Post(Models.Nota nota)
         {
-            listaNotas.Add(Notas);
+            listaNotas.Add(nota);
             return Ok(listaNotas);
+
         }
 
         [HttpGet]
         [Route("buscaNotas")]
-
         public ActionResult Busca(int id)
         {
             var result = listaNotas.Where(x => x.Id == id).ToList();

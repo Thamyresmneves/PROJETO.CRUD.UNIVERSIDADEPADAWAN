@@ -39,17 +39,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(129, 39);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(91, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 36);
+            this.label1.Size = new System.Drawing.Size(351, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Visualize sua Nota";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 29);
@@ -58,24 +62,28 @@
             // 
             // btn_voltar
             // 
+            this.btn_voltar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_voltar.Location = new System.Drawing.Point(171, 393);
+            this.btn_voltar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_voltar.Location = new System.Drawing.Point(12, 375);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(159, 36);
             this.btn_voltar.TabIndex = 6;
             this.btn_voltar.Text = "voltar";
-            this.btn_voltar.UseVisualStyleBackColor = true;
+            this.btn_voltar.UseVisualStyleBackColor = false;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // btn_entrar
             // 
+            this.btn_entrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_entrar.Location = new System.Drawing.Point(430, 139);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(83, 220);
             this.btn_entrar.TabIndex = 7;
             this.btn_entrar.Text = "Entrar";
-            this.btn_entrar.UseVisualStyleBackColor = true;
+            this.btn_entrar.UseVisualStyleBackColor = false;
             this.btn_entrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // cb_aluno
@@ -99,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Portal.Properties.Resources.fundo_011;
             this.ClientSize = new System.Drawing.Size(544, 458);
             this.Controls.Add(this.list_view);
             this.Controls.Add(this.cb_aluno);

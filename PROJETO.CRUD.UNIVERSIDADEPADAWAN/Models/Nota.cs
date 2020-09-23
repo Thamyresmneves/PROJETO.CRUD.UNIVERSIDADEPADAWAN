@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-
-
-namespace UNIVERSIDADEPADAWAN.Models
+﻿namespace UNIVERSIDADEPADAWAN.Models
 {
-    public class Notas
+    public class Nota
     {
         public int Id { get; set; }
-        public int Nota { get; set; }
+        public string Valor { get; set; }
         public string Materia { get; set; }
         public string Aluno { get; set; }
         

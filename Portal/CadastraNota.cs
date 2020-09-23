@@ -20,24 +20,22 @@ namespace Portal
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno();
-            Materia materia = new Materia();        
-            Notas nota = new Notas();
-
+            Nota nota = new Nota();
+            nota.Valor = txt_notaN.Text;
             nota.Aluno = cb_aluno.Text;
-            nota.Materia = cb_materia.Text;     
-            nota.Nota = txt_notaN.Text;
-        
+            nota.Materia = cb_materia.Text;
 
-            List<Notas> listaNotas = new GravarNota().Add(nota);
+
+            List<Nota> listaNotas = new GravarNota().Add(nota);
 
             ListViewItem[] itens = new ListViewItem[listaNotas.Count];
             for (int i = 0; i < listaNotas.Count; i++)
             {
-                itens[i] = new ListViewItem(listaNotas[i].Aluno, i);
+                itens[i] = new ListViewItem(listaNotas[i].Valor, i);
             }
             list_view.Items.Clear();
             list_view.Items.AddRange(itens);
+
         }
 
         private void TelaProfessor_Load(object sender, EventArgs e)
@@ -64,7 +62,7 @@ namespace Portal
 
         private void btn_apagar_Click(object sender, EventArgs e)
         {
-            List<Notas> listaNota = new GravarNota().Deleta(cb_aluno.Text);
+            List<Nota> listaNota = new GravarNota().Deleta(cb_aluno.Text);
             ListViewItem[] itens = new ListViewItem[listaNota.Count];
             for (int i = 0; i < listaNota.Count; i++)
             {

@@ -13,24 +13,26 @@ namespace Portal
     {
         public List<Aluno> Add(Aluno alunos)
         {
-           try
-            { var url = "http://localhost:53462/cadastro/adicionaAluno";
-
-            HttpClient httpClient = new HttpClient();
-            string serializedObject = JsonConvert.SerializeObject(alunos);
-            var content = new StringContent(serializedObject, Encoding.UTF8, "application/json");
-            var resultRequest = httpClient.PostAsync(url, content);
-            resultRequest.Wait();
-            var result = resultRequest.Result.Content.ReadAsStringAsync();
-            result.Wait();
-            var resultado = JsonConvert.DeserializeObject<List<Aluno>>(result.Result);
-            return resultado;
-        } catch ( Exception erro)
+            try
             {
-               
+                var url = "http://localhost:53462/cadastro/adicionaAluno";
+
+                HttpClient httpClient = new HttpClient();
+                string serializedObject = JsonConvert.SerializeObject(alunos);
+                var content = new StringContent(serializedObject, Encoding.UTF8, "application/json");
+                var resultRequest = httpClient.PostAsync(url, content);
+                resultRequest.Wait();
+                var result = resultRequest.Result.Content.ReadAsStringAsync();
+                result.Wait();
+                var resultado = JsonConvert.DeserializeObject<List<Aluno>>(result.Result);
+                return resultado;
             }
-                List<Aluno> listaAluno = new List<Aluno>();
-                return listaAluno;
+            catch (Exception erro)
+            {
+
+            }
+            List<Aluno> listaAluno = new List<Aluno>();
+            return listaAluno;
         }
 
         public List<Aluno> Deleta(string cpf)
@@ -49,10 +51,11 @@ namespace Portal
                     var resultado = JsonConvert.DeserializeObject<List<Aluno>>(result.Result);
                     return resultado;
                 }
-            } catch { }
-                List<Aluno> listaAluno = new List<Aluno>();
-                return listaAluno;
-            
+            }
+            catch { }
+            List<Aluno> listaAluno = new List<Aluno>();
+            return listaAluno;
+
         }
 
         public Aluno BuscaAluno(Aluno alunos)

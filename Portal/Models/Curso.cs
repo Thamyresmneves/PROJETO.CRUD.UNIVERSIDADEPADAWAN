@@ -8,6 +8,6 @@ namespace Portal
         public int Id { get; set; }
         public string NomeCurso { get; set; }       
         public bool Situacao { get; set; }
-        public List<Materia> Materias { get; set; }
+        public List<Materia> Materia { get; set; }
     }
 }

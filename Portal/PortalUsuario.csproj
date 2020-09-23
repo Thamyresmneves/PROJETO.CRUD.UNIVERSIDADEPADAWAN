@@ -68,7 +68,7 @@
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\Curso.cs" />
     <Compile Include="Models\Materia.cs" />
-    <Compile Include="Models\Notas.cs" />
+    <Compile Include="Models\Nota.cs" />
     <Compile Include="TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TelaAdm.resx">
       <DependentUpon>TelaAdm.cs</DependentUpon>
@@ -144,6 +145,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1075679.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EUiYD-lWoAAF9mO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-death-star-earth_1_widelg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ef927f0ab810fe019b11bd9e48c0620.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ima.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imag2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

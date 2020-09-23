@@ -11,7 +11,7 @@ namespace UNIVERSIDADEPADAWAN.Repository
         public static List<Aluno> Aluno { get; set; }
         public static List<Curso> Curso { get; set; }
         public static List<Materia> Materia { get; set; }
-        public static List<Notas> Notas { get; set; }
+        public static List<Nota> Notas { get; set; }
 
         public static void AdicionaAluno(Aluno aluno)
         {
@@ -28,7 +28,7 @@ namespace UNIVERSIDADEPADAWAN.Repository
             Materia.Add(materia);
         }
 
-        public static void AdicionaNota(Notas nota)
+        public static void AdicionaNota(Nota nota)
         {
             Notas.Add(nota);
         }
